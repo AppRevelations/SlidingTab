@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
         // you can change Tab text colors by using setTabTextColors function.
-        tabLayout.setTabTextColors(R.color.normal,R.color.selected);
+        tabLayout.setTabTextColors(getResources().getColorStateList(R.color.selected));
         
         tabLayout.setupWithViewPager(viewPager);
 
