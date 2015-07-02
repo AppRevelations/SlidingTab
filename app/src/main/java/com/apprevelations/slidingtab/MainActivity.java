@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Give the TabLayout the ViewPager
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-        tabLayout.setupWithViewPager(viewPager);
+        
 
         // you can set mode of tabs as scrollable or fix.
 
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         // you can change Tab text colors by using setTabTextColors function.
         tabLayout.setTabTextColors(R.color.normal,R.color.selected);
+        
+        tabLayout.setupWithViewPager(viewPager);
 
     }
 }
